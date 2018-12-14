@@ -6,7 +6,8 @@
 会点ps,所以自己设计了页面和交互。现在的数据都是是自己mock的，开发后台的时候会对接真实数据，由于搜索、收藏歌单、新建歌单、删除歌单、收藏单曲、移除收藏单曲等功能需要后台配合，所以现在都是纯前端展示，不具备功能
 ### 动图演示：
 
-![img](https://github.com/capslocktao/react-music-webapp/blob/master/newshow.gif)
+<!-- ![img](https://github.com/capslocktao/react-music-webapp/blob/master/newshow.gif) -->
+[![Watch the video](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://github.com/yuejianjian/react-webpp/blob/master/1111.mp4)
 ### 项目描述
 项目基于四个业务模块：**播放器、曲库、发现、个人**。这些模块中包含了一些基础组件来支撑业务逻辑：
 - **歌曲列表组件** ：（应用：曲库-曲库好歌、每日推荐、轮播图二级页面）点击歌曲播放并且高亮，收藏歌曲，将歌曲添加到播放列表；
