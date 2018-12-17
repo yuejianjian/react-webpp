@@ -5,6 +5,7 @@ import { sendReq } from "../utils/ajax";
 import '../App.css';
 import Footer from '../components/footer';
 import incoy from '../lab/image/arrow.png'
+import nofind from '../lab/image/nofind.png';
 
 class Page2 extends Component {
   constructor(props){
@@ -164,6 +165,11 @@ class Page2 extends Component {
           }
             
           </ul>
+        </div>
+        <div className="nodatalist" style={{'display':this.state.datalist.length===0?'block':'none'}}>
+          <img src={nofind} alt=""/>
+          <div className="nofind-1">当前筛选无结果</div>
+          <div className="nofind-2">您可以尝试筛选其他分类看看</div>
         </div>
         <Footer />
       </div>

@@ -41,7 +41,7 @@ class Page1 extends Component {
       })
   }
   IncoSelect=(e)=>{
-    console.log(e);
+    this.props.history.push({pathname : '/page3' ,query : { id: e} });
   }
   anli=()=>{
     this.props.history.replace('/page2');

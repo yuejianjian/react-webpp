@@ -4,6 +4,7 @@ import Header from "../components/header";
 import { tuchepic } from "../api/api";
 import { sendReq } from "../utils/ajax";
 import incoy from '../lab/image/arrow.png'
+import nofind from '../lab/image/nofind.png';
 import "../App.css";
 class Tuce extends Component {
   constructor(props) {
@@ -139,7 +140,12 @@ class Tuce extends Component {
               );
             })}
         </div>
-        <div className="jiazai" onClick={this.jiazai}>
+        <div className="nodatalist" style={{'display':this.state.msg.length===0?'block':'none'}}>
+          <img src={nofind} alt=""/>
+          <div className="nofind-1">当前筛选无结果</div>
+          <div className="nofind-2">您可以尝试筛选其他分类看看</div>
+        </div>
+        <div className="jiazai" onClick={this.jiazai} style={{'display':this.state.msg.length>0?'block':'none'}}>
           加载更多
         </div>
       </div>

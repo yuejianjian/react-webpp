@@ -15,6 +15,15 @@ class Page3 extends Component {
       combolist:[],     
     }
   }
+  componentWillMount(){
+    console.log(this.props);
+    let id=this.props.location.query?this.props.location.query.id:'';
+    if(id!=''){
+      this.setState({
+        selectid:id,
+      })
+    }
+  }  
   componentDidMount(){
     this.IncoSelect(this.state.selectid);
   }
